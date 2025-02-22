@@ -1,8 +1,6 @@
-import React from 'react';
 import { Bug, Building2, SprayCan as Spray } from 'lucide-react';
 import Section from './ui/Section';
 import SectionTitle from './shared/SectionTitle';
-import Grid from './layout/Grid';
 import Card from './ui/Card';
 import Button from './ui/Button';
 

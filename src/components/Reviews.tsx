@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Section from './ui/Section';
 import SectionTitle from './shared/SectionTitle';
-import Grid from './layout/Grid';
 import Card from './ui/Card';
 import Button from './ui/Button';
 import useMediaQuery from '../hooks/useMediaQuery';
