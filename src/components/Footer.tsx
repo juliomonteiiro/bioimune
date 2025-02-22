@@ -1,17 +1,16 @@
-import React from 'react';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  return (
+  return (  
     <footer className="bg-teal-800 text-white">
       <div className="max-w-7xl mx-auto px-8 pt-16 pb-8">
         <div className="grid md:grid-cols-4 gap-12 border-b border-teal-700/30 pb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">Bio Imune</h3>
             <p className="text-sm opacity-80 mb-6">
-              Há mais de 15 anos proporcionando ambientes seguros e livres de pragas para famílias e empresas.
+              Proporcionando ambientes seguros e livres de pragas para famílias e empresas.
             </p>
             <div className="flex gap-4">
               <a href="https://facebook.com/bioimune" target="_blank" rel="noopener noreferrer" 

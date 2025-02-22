@@ -48,7 +48,7 @@ const Services = () => {
   const services = [
     {
       title: "Dedetização Residencial",
-      description: "Proteção completa para sua casa contra baratas, formigas, aranhas e outros insetos. Inclui vistoria completa, aplicação de produtos específicos e garantia de 3 meses.",
+      description: "Proteção completa para sua casa contra insetos, roedores e aracnídeos. Serviço inclui vistoria detalhada, aplicação de produtos específicos e ecológicos, com garantia de 3 meses.",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtEbvCFTZdT1jQthGCSV6oU6W7EL3tJI4wQ&s",
       icon: Bug,
       color: "from-teal-500/10 to-teal-600/10",
@@ -56,16 +56,16 @@ const Services = () => {
     },
     {
       title: "Dedetização Comercial",
-      description: "Soluções personalizadas para empresas, restaurantes e indústrias. Inclui plano de manejo integrado de pragas, relatórios técnicos e certificado para vigilância sanitária.",
+      description: "Soluções especializadas para comércios e indústrias, incluindo manejo integrado de pragas, relatórios técnicos e certificação para vigilância sanitária. Atendimento personalizado.",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       icon: Building2,
       color: "from-teal-500/10 to-teal-600/10",
       price: "A partir de R$ 250,00"
     },
     {
-      title: "Sanitização",
-      description: "Eliminação de 99,9% dos vírus e bactérias com produtos específicos e tecnologia de última geração. Ideal para escritórios, clínicas e estabelecimentos comerciais.",
-      image: "https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      title: "Sanitização Profissional",
+      description: "Eliminação eficaz de vírus e bactérias com produtos específicos e tecnologia avançada. Ideal para estabelecimentos comerciais, escritórios e áreas de grande circulação.",
+      image: "https://exterminseto.com.br/uploads/pagina/elemento/campo/2023/11/sLoFi940H1PG0zQ3/sanitizacao-de-ambientes-de-trabalho-importancia-e-frequencia-recomendada.jpg",
       icon: Spray,
       color: "from-teal-500/10 to-teal-600/10",
       price: "A partir de R$ 200,00"
@@ -87,7 +87,7 @@ const Services = () => {
 
       <div className="text-center mt-12">
         <p className="text-gray-600 mb-6">
-          Todos os serviços incluem garantia e suporte pós-serviço
+          Atendemos Campinas, Sumaré, Hortolândia, Paulínia, Americana e Valinhos
         </p>
         <Button 
           onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}

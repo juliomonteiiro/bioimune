@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
@@ -107,18 +107,18 @@ const Header = () => {
       </nav>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-[calc(100vh-80px)] text-white text-center px-4">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-200">
-          Dedetização Bio Imune
-        </h1>
+      <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-200 leading-tight tracking-tight">
+        Bio Imune Controle de Pragas
+      </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl text-teal-50">
-          Proteja seu ambiente com soluções profissionais e ecológicas de controle de pragas
+          Referência em soluções eficazes e ecológicas para o controle de pragas urbanas na região metropolitana de Campinas
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <button 
             onClick={() => scrollToSection('contato')}
             className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105"
           >
-            Fale Conosco
+            Solicite um Orçamento
           </button>
           <button 
             onClick={() => scrollToSection('servicos')}

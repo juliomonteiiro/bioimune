@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionTitle from './shared/SectionTitle';
 import Button from './ui/Button';
 import Section from './ui/Section';
@@ -15,10 +14,11 @@ const About = () => {
       <Grid cols={2} gap={16}>
         <div>
           <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-            A Bio Imune é líder em soluções de controle de pragas, com mais de 15 anos de experiência no mercado. 
-            Nossa missão é proporcionar ambientes seguros e saudáveis através de métodos eficazes e ecologicamente responsáveis.
-            Utilizamos produtos de última geração, aprovados pela ANVISA, e contamos com uma equipe altamente qualificada e 
-            certificada para garantir os melhores resultados.
+            A Bio Imune nasceu em 2024 com uma missão clara: ser referência no combate e prevenção 
+            de pragas urbanas na região metropolitana de Campinas. Nosso compromisso é proporcionar 
+            ambientes seguros e saudáveis através de métodos eficazes e ecologicamente responsáveis. 
+            Especializamo-nos no controle de insetos, roedores e aracnídeos, atendendo residências, 
+            comércios, indústrias e condomínios com excelência e preços acessíveis.
           </p>
           <Button 
             onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}

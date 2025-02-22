@@ -1,4 +1,3 @@
-import React from 'react';
 import { Shield, Clock, Award, Users } from 'lucide-react';
 import Section from './ui/Section';
 import Grid from './layout/Grid';
@@ -7,10 +6,10 @@ import Card from './ui/Card';
 const Benefits = () => {
   const benefits = [
     { 
-      number: "98%", 
-      text: "Satisfação dos clientes",
-      icon: Users,
-      description: "Avaliações positivas e clientes satisfeitos"
+      number: "100%", 
+      text: "Responsabilidade Ambiental",
+      icon: Shield,
+      description: "Produtos seguros e ecologicamente responsáveis"
     },
     { 
       number: "24h", 
@@ -19,36 +18,41 @@ const Benefits = () => {
       description: "Suporte e emergências 24 horas"
     },
     { 
-      number: "15+", 
-      text: "Anos de experiência",
+      number: "6+", 
+      text: "Cidades atendidas",
       icon: Award,
-      description: "Tradição e conhecimento no mercado"
+      description: "Campinas, Sumaré, Hortolândia e região"
     },
     { 
-      number: "5k+", 
-      text: "Clientes atendidos",
-      icon: Shield,
-      description: "Confiança de milhares de clientes"
+      number: "500+", 
+      text: "Ambientes protegidos",
+      icon: Users,
+      description: "Residências, comércios e indústrias"
     }
   ];
 
   return (
     <Section bgColor="bg-teal-700" className="text-white">
       <Grid cols={2} gap={12}>
-        <div className="lg:pr-12 lg:border-r border-teal-600/30">
-          <div className="relative mb-8 group">
-            <div className="absolute -left-4 lg:-left-10 top-4 w-12 lg:w-20 h-0.5 bg-white 
-                          transform origin-left transition-all duration-300 group-hover:scale-x-110"></div>
-            <h2 className="text-2xl font-bold pl-10 transform transition-all duration-300 group-hover:translate-x-2">
-              Por que dedetizar com a Bio Imune?
-            </h2>
-          </div>
-          <p className="text-sm opacity-90 leading-relaxed transform transition-all duration-500 hover:translate-x-1">
-            A Bio Imune oferece soluções completas em controle de pragas, com produtos de alta qualidade
-            e profissionais especializados. Nossa experiência e compromisso com a excelência garantem
-            resultados duradouros e a satisfação total dos nossos clientes.
-          </p>
-        </div>
+      <div className="lg:pr-12 lg:border-r border-teal-600/30">
+      <div className="relative mb-8 group">
+        <div className="absolute -left-1 lg:-left-6 top-4 w-10 lg:w-10 h-0.5 bg-white 
+                      transform origin-left transition-all duration-300 group-hover:scale-x-110"></div>
+        <h2 className="text-2xl font-bold pl-5 transform transition-all duration-300 group-hover:translate-x-2">
+          Por que escolher a Bio Imune?
+        </h2>
+      </div>
+      <p className="text-sm opacity-90 leading-relaxed transform transition-all duration-500 hover:translate-x-1">
+        A Bio Imune oferece soluções completas e eficientes no combate a pragas, 
+        utilizando produtos de alta qualidade e profissionais especializados, 
+        garantindo a eficácia em cada serviço. Nosso compromisso com a excelência 
+        e a atenção aos detalhes asseguram resultados duradouros, sempre priorizando 
+        a satisfação dos nossos clientes. Trabalhamos com dedicação para transformar 
+        qualquer ambiente infestado em um local seguro, limpo e livre de pragas, 
+        focando também na saúde e bem-estar das pessoas. A confiança de nossos clientes 
+        reflete nosso esforço contínuo em entregar soluções inovadoras e de qualidade.
+      </p>
+    </div>
         
         <Grid cols={2} gap={8} className="lg:pl-12">
           {benefits.map((benefit, i) => (

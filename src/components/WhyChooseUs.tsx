@@ -4,20 +4,20 @@ import { CheckCircle } from 'lucide-react';
 const WhyChooseUs = () => {
   const reasons = [
     {
-      title: "Profissionais Certificados",
-      description: "Nossa equipe é altamente treinada e certificada para garantir o melhor serviço."
+      title: "Compromisso Ambiental",
+      description: "Utilizamos produtos aprovados pela ANVISA e ecologicamente responsáveis, garantindo a segurança de pessoas e animais."
     },
     {
-      title: "Produtos Seguros",
-      description: "Utilizamos produtos aprovados pela ANVISA, seguros para pessoas e animais."
+      title: "Preço Justo",
+      description: "Oferecemos serviços de alta qualidade com preços acessíveis, sem comprometer a eficácia do tratamento."
     },
     {
       title: "Garantia de Serviço",
-      description: "Oferecemos garantia em todos os nossos serviços de dedetização."
+      description: "Todos os nossos serviços incluem garantia e acompanhamento pós-tratamento para sua tranquilidade."
     },
     {
-      title: "Atendimento 24/7",
-      description: "Suporte e atendimento disponível 24 horas por dia, 7 dias por semana."
+      title: "Atendimento Especializado",
+      description: "Equipe treinada para identificar e solucionar problemas específicos de cada ambiente e tipo de infestação."
     }
   ];
 
@@ -45,8 +45,11 @@ const WhyChooseUs = () => {
                 </div>
               </div>
             ))}
-            <button className="mt-8 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium py-3 px-6 rounded-lg transition-colors">
-              Entre em Contato
+            <button 
+              onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+              className="mt-8 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium py-3 px-6 rounded-lg transition-colors"
+            >
+              Solicite um Orçamento
             </button>
           </div>
           <div className="relative">
