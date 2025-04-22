@@ -30,6 +30,7 @@ const Contact = () => {
     message: ''
   });
 
+
   const validationRules = {
     name: { required: true, minLength: 3 },
     phone: { required: true, phone: true },
@@ -50,8 +51,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_w2dl0o4',
+        'template_bfihnwm',
         {
           from_name: values.name,
           phone: values.phone,
@@ -59,8 +60,9 @@ const Contact = () => {
           service: values.service,
           message: values.message
         },
-        'YOUR_PUBLIC_KEY'
-      );
+        '3IB_ceG5wI3f_RTfu'
+      );    
+      console.log(values.email);  
 
       toast.success('Mensagem enviada com sucesso! Em breve entraremos em contato.');
       setValues({
@@ -71,6 +73,7 @@ const Contact = () => {
         message: ''
       });
     } catch (error) {
+      console.error('Erro no envio do EmailJS:', error);
       toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
     } finally {
       setIsSubmitting(false);
@@ -78,9 +81,9 @@ const Contact = () => {
   };
 
   const serviceOptions = [
-    { value: 'residencial', label: 'Dedetização Residencial' },
-    { value: 'comercial', label: 'Dedetização Comercial' },
-    { value: 'sanitizacao', label: 'Sanitização' }
+    { value: 'Dedetização Residencial', label: 'Dedetização Residencial' },
+    { value: 'Dedetização Comercial', label: 'Dedetização Comercial' },
+    { value: 'Sanitização', label: 'Sanitização' }
   ];
 
   return (
@@ -98,11 +101,11 @@ const Contact = () => {
             ambiente livre de pragas com até 3 meses de garantia.
           </p>
           <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
-            <img 
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt="Profissional Bio Imune"
-              className="w-full h-full object-cover"
-            />
+          <img 
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            alt="Profissional Bio Imune"
+            className="w-full h-full object-cover"
+          />
           </div>
         </div>
         

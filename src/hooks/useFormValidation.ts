@@ -18,6 +18,12 @@ const useFormValidation = (initialState: { [key: string]: string }) => {
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [touched, setTouched] = useState<{ [key: string]: boolean }>({});
 
+  const resetForm = () => {
+    setValues(initialState);
+    setErrors({});
+    setTouched({});
+  };
+
   const validateField = (name: string, value: string, rules: ValidationRules) => {
     if (rules.required && !value) {
       return 'Este campo é obrigatório';
@@ -51,7 +57,6 @@ const useFormValidation = (initialState: { [key: string]: string }) => {
     
     let formattedValue = value;
     
-    // Format phone number
     if (name === 'phone') {
       formattedValue = value
         .replace(/\D/g, '')
@@ -94,6 +99,7 @@ const useFormValidation = (initialState: { [key: string]: string }) => {
     validateForm,
     setValues,
     setErrors,
+    resetForm,
   };
 };
 
